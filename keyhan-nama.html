@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#050a15">
+<title>کیهان‌نما | آسمان امروز</title>
+<link href="https://cdn.jsdelivr.net/gh/rastikerdar/vazirmatn@v33.003/Vazirmatn-font-face.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<style>
+:root{--bg-dark:#050a15;--bg-card:#0b1324;--bg-hover:#131f36;--text:#f1f5f9;--muted:#94a3b8;--primary:#06b6d4;--primary-hover:#0891b2;--border:#1e293b}
+*{box-sizing:border-box;margin:0;padding:0;font-family:Vazirmatn,sans-serif}
+html{scroll-behavior:smooth;scroll-padding-top:90px}
+body{background:var(--bg-dark);color:var(--text);overflow-x:hidden;background-image:radial-gradient(circle at 50% 0%,#172554 0%,transparent 40%)}
+a{color:inherit}button,input{font:inherit}
+header{display:flex;justify-content:space-between;align-items:center;gap:18px;padding:15px 5%;border-bottom:1px solid var(--border);background:rgba(5,10,21,.92);backdrop-filter:blur(12px);position:sticky;top:0;z-index:1000}
+.logo{display:flex;align-items:center;gap:10px;font-size:1.4rem;font-weight:800;white-space:nowrap}.logo i{color:var(--primary);font-size:1.8rem}
+nav ul{display:flex;list-style:none;gap:20px}nav a{text-decoration:none;color:var(--muted);font-size:.9rem;transition:.2s}nav a:hover,nav a.active{color:var(--primary)}
+.header-actions{display:flex;align-items:center;gap:12px}.search-box{background:#0f172a;border:1px solid var(--border);border-radius:20px;padding:9px 14px;color:var(--text);outline:none;font-size:.85rem;width:190px}.search-box:focus{border-color:var(--primary)}
+.icon-btn{background:none;border:0;color:var(--muted);font-size:1.15rem;cursor:pointer;padding:5px}.icon-btn:hover{color:var(--primary)}
+.hero{display:flex;justify-content:space-between;align-items:center;gap:30px;padding:55px 5%;min-height:550px;background:url('https://images.unsplash.com/photo-1451187580459-43490279c0fa?q=80&w=2072&auto=format&fit=crop') center/cover;position:relative}
+.hero:before{content:"";position:absolute;inset:0;background:linear-gradient(to left,rgba(5,10,21,.97),rgba(5,10,21,.45))}
+.hero-content{flex:1;max-width:620px;position:relative;z-index:1}.eyebrow{display:inline-flex;align-items:center;gap:8px;border:1px solid #155e75;background:#08334499;color:#67e8f9;border-radius:20px;padding:6px 12px;font-size:.8rem;margin-bottom:18px}
+.hero h1{font-size:clamp(2rem,4vw,3.1rem);line-height:1.4;margin-bottom:12px}.hero h1 span,.hero h2 span{color:var(--primary)}.hero h2{font-size:clamp(1.5rem,3vw,2.2rem);margin-bottom:15px}.hero p{color:#cbd5e1;font-size:1rem;line-height:2;margin-bottom:25px;max-width:560px}
+.hero-buttons{display:flex;gap:12px;flex-wrap:wrap}.btn{padding:11px 19px;border-radius:25px;border:0;font-size:.9rem;cursor:pointer;display:inline-flex;align-items:center;justify-content:center;gap:8px;text-decoration:none;transition:.25s}
+.btn-primary{background:var(--primary);color:#031018;font-weight:800}.btn-primary:hover{background:var(--primary-hover);transform:translateY(-2px)}.btn-outline{background:#0f172a99;border:1px solid var(--primary);color:var(--text);backdrop-filter:blur(5px)}.btn-outline:hover{background:#06b6d422}
+.glass-panel{background:rgba(11,19,36,.82);backdrop-filter:blur(15px);border:1px solid #334155;border-radius:16px;padding:20px;width:320px;flex-shrink:0;position:relative;z-index:1;box-shadow:0 15px 35px #0007}.glass-panel h3{font-size:1rem;margin-bottom:15px;display:flex;align-items:center;gap:8px}.glass-panel h3 i{color:var(--primary)}
+.info-row{display:flex;justify-content:space-between;align-items:center;gap:10px;padding:11px 0;border-bottom:1px solid #ffffff0d;font-size:.83rem;color:var(--muted)}.info-row:last-of-type{border:0}.info-row span:last-child{color:var(--text);display:flex;gap:6px;align-items:center}
+.features{display:grid;grid-template-columns:repeat(4,1fr);gap:15px;padding:30px 5%}.feature-card{background:var(--bg-card);border:1px solid var(--border);border-radius:12px;padding:16px;display:flex;align-items:center;gap:12px;transition:.25s}.feature-card:hover,.feature-card:focus{background:var(--bg-hover);transform:translateY(-3px);border-color:#155e75;outline:none}.feature-card{cursor:pointer}.lesson-link{display:inline-flex;gap:7px;align-items:center;color:var(--primary);font-size:.8rem;margin-top:8px}
+.feature-icon{width:45px;height:45px;flex-shrink:0;border-radius:50%;background:#06b6d41a;color:var(--primary);display:flex;justify-content:center;align-items:center;font-size:1.2rem}.feature-text h4{font-size:.9rem;margin-bottom:4px}.feature-text p{font-size:.75rem;color:var(--muted)}
+.main-container{padding:0 5% 45px;display:flex;flex-direction:column;gap:28px}.section-title{font-size:1.1rem;display:flex;align-items:center;gap:9px;margin-bottom:15px}.section-title i{color:var(--primary)}
+.top-grid{display:grid;grid-template-columns:1fr 1.5fr;gap:20px}.card-box{background:var(--bg-card);border:1px solid var(--border);border-radius:15px;padding:20px;min-width:0}.subtext{font-size:.78rem;color:var(--muted);line-height:1.8;margin-bottom:12px}
+.map-layout{display:flex;gap:15px}.map-image{flex:1;background:url('https://images.unsplash.com/photo-1519681393784-d120267933ba?q=80&w=800&auto=format&fit=crop') center/cover;border-radius:12px;min-height:205px;border:1px solid var(--border);position:relative;overflow:hidden}.map-image:after{content:"";position:absolute;inset:45% 0 0;background:linear-gradient(to top,var(--bg-dark),transparent)}
+.map-controls{display:flex;flex-direction:column;gap:8px;width:130px;flex-shrink:0}.ctrl-box{background:var(--bg-dark);border:1px solid var(--border);border-radius:8px;padding:8px;font-size:.73rem;display:flex;justify-content:space-between;gap:5px;color:var(--muted)}.ctrl-box span:last-child{color:var(--text)}
+.btn-small{background:#06b6d41a;border:1px solid var(--primary);color:var(--primary);border-radius:8px;padding:9px;font-size:.75rem;cursor:pointer}.btn-small:hover{background:#06b6d433}
+.planets-row{display:flex;gap:10px;overflow-x:auto;padding-bottom:7px}.planets-row::-webkit-scrollbar{height:4px}.planets-row::-webkit-scrollbar-thumb{background:#334155;border-radius:5px}
+.planet-item{background:var(--bg-dark);border:1px solid var(--border);border-radius:10px;padding:10px;text-align:center;min-width:88px;cursor:pointer;transition:.25s}.planet-item:hover,.planet-item:focus{border-color:var(--primary);transform:translateY(-2px)}.planet-item img{width:48px;height:48px;border-radius:50%;object-fit:cover;margin-bottom:8px}.planet-item h4{font-size:.78rem;margin-bottom:3px}.planet-item p{font-size:.63rem;color:var(--muted)}
+.articles-grid,.events-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:15px}.article-card{background:var(--bg-dark);border-radius:12px;overflow:hidden;border:1px solid var(--border);cursor:pointer;transition:.25s}.article-card:hover{border-color:var(--primary);transform:translateY(-3px)}.article-card img{width:100%;height:150px;object-fit:cover;display:block}.article-info{padding:14px}.tag{background:#06b6d41a;color:#67e8f9;font-size:.68rem;padding:3px 9px;border-radius:10px;display:inline-block;margin-bottom:8px}.article-info h4{font-size:.9rem;line-height:1.7;margin-bottom:7px}.article-info p{font-size:.75rem;color:var(--muted);line-height:1.8}
+.event-card{background:var(--bg-dark);border:1px solid var(--border);border-radius:10px;padding:16px;display:flex;justify-content:space-between;align-items:center;gap:12px;transition:.2s}.event-card:hover{background:var(--bg-hover);border-color:#155e75}.event-card h4{font-size:.87rem;margin-bottom:6px}.event-card p{font-size:.73rem;color:var(--muted);line-height:1.7}.event-icon{font-size:1.6rem;color:var(--primary);flex-shrink:0}
+footer{background:#030712;border-top:1px solid var(--border);padding:40px 5% 20px;display:grid;grid-template-columns:1.5fr 1fr 1fr 1.5fr;gap:25px}.footer-col h4{font-size:1rem;margin-bottom:15px}.footer-col p{font-size:.8rem;color:var(--muted);line-height:2}.footer-col ul{list-style:none}.footer-col ul li{margin-bottom:9px}.footer-col ul a{text-decoration:none;color:var(--muted);font-size:.82rem}.footer-col ul a:hover,.socials a:hover{color:var(--primary)}.socials{display:flex;gap:15px;margin-top:15px}.socials a{color:var(--muted);font-size:1.1rem}.newsletter input{width:100%;padding:10px;border-radius:8px;border:1px solid var(--border);background:var(--bg-card);color:white;margin-bottom:10px;outline:none;font-size:.82rem}.newsletter input:focus{border-color:var(--primary)}.newsletter .btn{width:100%}.copyright{grid-column:1/-1;text-align:center;padding-top:20px;margin-top:10px;border-top:1px solid var(--border);font-size:.75rem;color:var(--muted)}
+.notice{position:fixed;bottom:20px;left:20px;background:#0b1324;border:1px solid var(--primary);color:var(--text);padding:12px 18px;border-radius:10px;box-shadow:0 8px 25px #0008;z-index:2000;display:none;font-size:.85rem;max-width:calc(100% - 40px)}
+.detail-modal{position:fixed;inset:0;background:#020617cc;backdrop-filter:blur(7px);z-index:3000;display:flex;align-items:center;justify-content:center;padding:20px}.modal-card{position:relative;width:min(100%,480px);background:var(--bg-card);color:var(--text);border:1px solid var(--primary);border-radius:16px;padding:28px;box-shadow:0 20px 60px #0009}.modal-card h2{font-size:1.2rem;margin:0 32px 12px 0}.modal-card p{color:var(--muted);line-height:2;margin-bottom:20px;font-size:.92rem}.modal-close{position:absolute;left:15px;top:15px;border:0;background:transparent;color:var(--muted);font-size:1.2rem;cursor:pointer}.no-results{grid-column:1/-1;text-align:center;color:var(--muted);padding:24px;border:1px dashed var(--border);border-radius:12px}.light-mode .hero:before{background:linear-gradient(to left,rgba(5,10,21,.88),rgba(5,10,21,.35))}.light-mode .feature-card,.light-mode .card-box,.light-mode .glass-panel,.light-mode .article-card,.light-mode .event-card,.light-mode .planet-item,.light-mode .ctrl-box,.light-mode .newsletter input{color:var(--text)}.light-mode .article-card,.light-mode .event-card,.light-mode .planet-item,.light-mode .ctrl-box{background:var(--bg-card)}.light-mode footer{background:#e2eaf2}.light-mode .search-box{background:#fff;color:var(--text)}
+@media(max-width:1100px){nav ul{gap:12px}nav a{font-size:.82rem}.search-box{width:150px}.top-grid{grid-template-columns:1fr}.features{grid-template-columns:repeat(2,1fr)}footer{grid-template-columns:1fr 1fr}}
+@media(max-width:768px){header{flex-wrap:wrap;gap:12px}.logo{font-size:1.2rem}nav{order:3;width:100%;overflow-x:auto}nav ul{display:flex;gap:18px;width:max-content;padding:5px 0}nav a{font-size:.8rem}.header-actions{margin-right:auto}.search-box{width:min(42vw,180px)}.hero{flex-direction:column;text-align:center;padding:42px 5%;min-height:auto}.hero-content{width:100%}.hero p{margin-right:auto;margin-left:auto}.hero-buttons{justify-content:center}.glass-panel{width:min(100%,360px)}.features{grid-template-columns:1fr;padding-top:20px}.articles-grid,.events-grid{grid-template-columns:1fr}.map-layout{flex-direction:column}.map-image{min-height:190px}.map-controls{width:100%;display:grid;grid-template-columns:1fr 1fr}.map-controls .btn-small{grid-column:1/-1}.main-container{padding-bottom:30px}.card-box{padding:16px}footer{grid-template-columns:1fr;text-align:center}.socials{justify-content:center}.copyright{font-size:.7rem}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*:before,*:after{transition:none!important}}
+</style>
+</head>
+<body>
+<header>
+  <a class="logo" href="#home" style="text-decoration:none"><i class="fa-solid fa-meteor"></i><span>کیهان‌نما</span></a>
+  <nav aria-label="ناوبری اصلی"><ul>
+    <li><a class="active" href="#home">خانه</a></li><li><a href="#sky">آسمان امروز</a></li><li><a href="#planets">سیارات</a></li><li><a href="#knowledge">دانشنامه</a></li><li><a href="#education">آموزش نجوم</a></li><li><a href="#events">رویدادها</a></li><li><a href="#about">درباره ما</a></li>
+  </ul></nav>
+  <div class="header-actions"><input id="siteSearch" class="search-box" type="search" placeholder="جستجو در سایت..." aria-label="جستجو در سایت"><button class="icon-btn" id="themeButton" aria-label="تغییر حالت نمایش"><i class="fa-solid fa-moon"></i></button></div>
+</header>
+<main>
+<section class="hero" id="home">
+  <div class="hero-content">
+    <div class="eyebrow"><i class="fa-solid fa-star"></i> پنجره‌ای رو به کیهان</div>
+    <h1>به دنیای شگفت‌انگیز <span>نجوم</span> خوش آمدید!</h1>
+    <h2>جهان را <span>کشف کن!</span></h2>
+    <p>سیارات را بشناس، آسمان را کاوش کن و با شگفتی‌های جهان هستی آشنا شو؛ سفر تو به اعماق کیهان از همین‌جا شروع می‌شود.</p>
+    <div class="hero-buttons"><a class="btn btn-primary" href="#planets"><i class="fa-solid fa-rocket"></i> کاوش سیارات</a><a class="btn btn-outline" href="#sky"><i class="fa-solid fa-satellite"></i> مشاهده آسمان</a></div>
+  </div>
+  <aside class="glass-panel" id="sky">
+    <h3><i class="fa-solid fa-location-dot"></i> آسمان در مکان شما</h3>
+    <div class="info-row"><span>تاریخ امروز:</span><span id="todayDate">در حال دریافت...</span></div>
+    <div class="info-row"><span>مکان:</span><span><i class="fa-solid fa-earth-asia"></i> نمای عمومی</span></div>
+    <div class="info-row"><span>زمان محلی:</span><span id="currentTime"><i class="fa-regular fa-clock"></i> --:--</span></div>
+    <p style="font-size:.72rem;color:var(--muted);line-height:1.8;margin-top:12px">برای نمایش دقیق آسمان، به اطلاعات مکان و ابزار نجومی زنده نیاز است.</p>
+    <a class="btn btn-primary" style="width:100%;margin-top:14px" href="https://stellarium-web.org/" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-eye"></i> مشاهده نقشه زنده آسمان</a>
+  </aside>
+</section>
+<section class="features" aria-label="ویژگی‌های سایت">
+  <div class="feature-card" tabindex="0" role="button" data-feature="دانشنامه جامع" data-target="knowledge"><div class="feature-icon"><i class="fa-solid fa-book-open"></i></div><div class="feature-text"><h4>دانشنامه جامع</h4><p>از سیارات تا کهکشان‌ها</p></div></div>
+  <div class="feature-card" tabindex="0" role="button" data-feature="نقشه آسمان" data-target="sky"><div class="feature-icon"><i class="fa-solid fa-compass"></i></div><div class="feature-text"><h4>نقشه آسمان</h4><p>آشنایی با آسمان شب</p></div></div>
+  <div class="feature-card" tabindex="0" role="button" data-feature="آسمان امروز" data-target="sky"><div class="feature-icon"><i class="fa-solid fa-sun"></i></div><div class="feature-text"><h4>آسمان امروز</h4><p>اطلاعات تاریخ و زمان</p></div></div>
+  <div class="feature-card" tabindex="0" role="button" data-feature="آموزش نجوم" data-target="education"><div class="feature-icon"><i class="fa-solid fa-graduation-cap"></i></div><div class="feature-text"><h4>آموزش نجوم</h4><p>یادگیری به زبان ساده</p></div></div>
+</section>
+<div class="main-container">
+  <section class="top-grid">
+    <div class="card-box"><h2 class="section-title"><i class="fa-solid fa-earth-americas"></i> نقشه آسمان</h2><p class="subtext">تصویری الهام‌بخش از آسمان شب؛ این بخش هنوز نقشه تعاملی واقعی نیست.</p>
+      <div class="map-layout"><div class="map-image" role="img" aria-label="تصویر کوهستان زیر آسمان پرستاره"></div><div class="map-controls"><div class="ctrl-box"><span>تاریخ</span><span id="mapDate">امروز</span></div><div class="ctrl-box"><span>زمان</span><span id="mapTime">--:--</span></div><div class="ctrl-box"><span>مکان</span><span>عمومی</span></div><button class="btn-small" onclick="updateClock()"><i class="fa-solid fa-rotate"></i> بروزرسانی</button></div></div>
+    </div>
+    <div class="card-box" id="planets"><div style="display:flex;justify-content:space-between;align-items:center;gap:10px;margin-bottom:15px"><h2 class="section-title" style="margin:0"><i class="fa-solid fa-ring" style="color:#a855f7"></i> سیارات منظومه شمسی</h2><a href="#knowledge" style="color:var(--primary);text-decoration:none;font-size:.75rem;white-space:nowrap">بیشتر ←</a></div>
+      <div class="planets-row">
+        <button class="planet-item" data-planet="عطارد"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4a/Mercury_in_true_color.jpg/240px-Mercury_in_true_color.jpg" alt="سیاره عطارد"><h4>عطارد</h4><p>کوچک‌ترین سیاره</p></button>
+        <button class="planet-item" data-planet="زهره"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/Venus_globe.jpg/240px-Venus_globe.jpg" alt="سیاره زهره"><h4>زهره</h4><p>داغ و درخشان</p></button>
+        <button class="planet-item" data-planet="زمین"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/97/The_Earth_seen_from_Apollo_17.jpg/240px-The_Earth_seen_from_Apollo_17.jpg" alt="سیاره زمین"><h4>زمین</h4><p>خانه ما</p></button>
+        <button class="planet-item" data-planet="مریخ"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/02/OSIRIS_Mars_true_color.jpg/240px-OSIRIS_Mars_true_color.jpg" alt="سیاره مریخ"><h4>مریخ</h4><p>سیاره سرخ</p></button>
+        <button class="planet-item" data-planet="مشتری"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e2/Jupiter.jpg/240px-Jupiter.jpg" alt="سیاره مشتری"><h4>مشتری</h4><p>غول گازی</p></button>
+        <button class="planet-item" data-planet="زحل"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c7/Saturn_during_Equinox.jpg/240px-Saturn_during_Equinox.jpg" alt="سیاره زحل"><h4>زحل</h4><p>حلقه‌های زیبا</p></button>
+        <button class="planet-item" data-planet="اورانوس"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3d/Uranus2.jpg/240px-Uranus2.jpg" alt="سیاره اورانوس"><h4>اورانوس</h4><p>غول یخی</p></button>
+        <button class="planet-item" data-planet="نپتون"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/56/Neptune_Full.jpg/240px-Neptune_Full.jpg" alt="سیاره نپتون"><h4>نپتون</h4><p>دورترین سیاره</p></button>
+      </div>
+      <p id="planetDetail" class="subtext" style="margin:14px 0 0">برای دیدن یک نکته کوتاه، روی یکی از سیارات بزن.</p>
+    </div>
+  </section>
+  <section id="knowledge"><h2 class="section-title"><i class="fa-solid fa-book-open"></i> مقالات پیشنهادی</h2>
+    <div class="articles-grid">
+      <article class="article-card" data-searchable><img src="https://images.unsplash.com/photo-1446776811953-b23d57bd21aa?q=80&w=900&auto=format&fit=crop" alt="زمین از فضا"><div class="article-info"><span class="tag">فضا</span><h4>آیا در جهان تنها هستیم؟</h4><p>دانشمندان چگونه به دنبال نشانه‌هایی از حیات در سیارات دیگر می‌گردند؟</p></div></article>
+      <article class="article-card" data-searchable><img src="https://images.unsplash.com/photo-1462331940025-496dfbfc7564?q=80&w=900&auto=format&fit=crop" alt="سحابی رنگارنگ در فضا"><div class="article-info"><span class="tag">کهکشان‌ها</span><h4>تولد و مرگ ستاره‌ها</h4><p>ستاره‌ها چگونه شکل می‌گیرند و در پایان عمرشان چه اتفاقی می‌افتد؟</p></div></article>
+      <article class="article-card" data-searchable><img src="https://images.unsplash.com/photo-1614728263952-84ea256f9679?q=80&w=900&auto=format&fit=crop" alt="سیاره‌ای در فضا"><div class="article-info"><span class="tag">منظومه شمسی</span><h4>رازهای سیاره سرخ</h4><p>چرا مریخ یکی از مهم‌ترین مقصدهای پژوهش‌های فضایی است؟</p></div></article>
+    </div>
+  </section>
+  <section id="education"><h2 class="section-title"><i class="fa-solid fa-graduation-cap"></i> آموزش نجوم</h2>
+    <p class="subtext">از مفاهیم پایه شروع کن و با چند درس کوتاه، آسمان را بهتر بشناس.</p>
+    <div class="articles-grid lessons-grid">
+      <article class="article-card lesson-card" data-title="نجوم چیست؟" data-body="نجوم دانش بررسی اجرام آسمانی مانند ستاره‌ها، سیارات، قمرها و کهکشان‌هاست. با مشاهده و اندازه‌گیری، دانشمندان دربارهٔ پیدایش و تحول جهان پژوهش می‌کنند."><img src="https://images.unsplash.com/photo-1446776811953-b23d57bd21aa?q=80&w=900&auto=format&fit=crop" alt="زمین از فضا"><div class="article-info"><span class="tag">درس ۱</span><h4>نجوم چیست؟</h4><p>با علم بررسی جهان و ابزارهای رصد آشنا شو.</p><span class="lesson-link">شروع درس <i class="fa-solid fa-arrow-left"></i></span></div></article>
+      <article class="article-card lesson-card" data-title="شناخت منظومه شمسی" data-body="منظومه شمسی از خورشید و اجرامی تشکیل شده که تحت گرانش آن قرار دارند. هشت سیاره، قمرها، سیارک‌ها و دنباله‌دارها از اعضای این منظومه‌اند."><img src="https://images.unsplash.com/photo-1614728263952-84ea256f9679?q=80&w=900&auto=format&fit=crop" alt="سیارات منظومه شمسی"><div class="article-info"><span class="tag">درس ۲</span><h4>شناخت منظومه شمسی</h4><p>خورشید، سیارات و اجرام کوچک‌تر را بشناس.</p><span class="lesson-link">شروع درس <i class="fa-solid fa-arrow-left"></i></span></div></article>
+      <article class="article-card lesson-card" data-title="چطور آسمان را رصد کنیم؟" data-body="برای شروع رصد، مکانی امن و تاریک دور از نورهای شدید انتخاب کن، اجازه بده چشم‌هایت با تاریکی سازگار شوند و از نقشه آسمان برای شناسایی صورت‌های فلکی کمک بگیر. هرگز بدون فیلتر مخصوص به خورشید نگاه نکن."><img src="https://images.unsplash.com/photo-1519681393784-d120267933ba?q=80&w=900&auto=format&fit=crop" alt="آسمان پرستاره"><div class="article-info"><span class="tag">درس ۳</span><h4>چطور آسمان را رصد کنیم؟</h4><p>چند نکته کاربردی برای شروع رصد آسمان شب.</p><span class="lesson-link">شروع درس <i class="fa-solid fa-arrow-left"></i></span></div></article>
+    </div>
+  </section>
+  <section id="events"><h2 class="section-title"><i class="fa-solid fa-calendar-days"></i> رویدادهای نجومی</h2>
+    <div class="events-grid">
+      <div class="event-card"><div><h4>بارش شهابی</h4><p>برای رصد، آسمانی تاریک و دور از نور شهر انتخاب کنید.</p></div><i class="fa-solid fa-meteor event-icon"></i></div>
+      <div class="event-card"><div><h4>ماه کامل</h4><p>زمان ماه کامل هر ماه تغییر می‌کند؛ تقویم نجومی را بررسی کنید.</p></div><i class="fa-solid fa-moon event-icon"></i></div>
+      <div class="event-card"><div><h4>مقارنه سیارات</h4><p>گاهی چند جرم آسمانی از دید زمین در کنار هم دیده می‌شوند.</p></div><i class="fa-solid fa-earth-americas event-icon"></i></div>
+    </div>
+    <p class="subtext" style="margin-top:10px">رویدادهای بالا توضیح‌های عمومی هستند و تاریخ دقیق رویدادهای آینده باید از تقویم نجومی به‌روز بررسی شود.</p>
+  </section>
+</div>
+</main>
+<footer id="about">
+  <div class="footer-col"><div class="logo" style="margin-bottom:14px"><i class="fa-solid fa-meteor"></i><span>کیهان‌نما</span></div><p>همراه شما در سفری شگفت‌انگیز به دنیای نجوم، سیارات و کهکشان‌ها. آسمان را با کنجکاوی بیشتری نگاه کنید.</p><div class="socials"><a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" aria-label="اینستاگرام"><i class="fa-brands fa-instagram"></i></a><a href="https://telegram.org/" target="_blank" rel="noopener noreferrer" aria-label="تلگرام"><i class="fa-brands fa-telegram"></i></a><a href="https://www.youtube.com/" target="_blank" rel="noopener noreferrer" aria-label="یوتیوب"><i class="fa-brands fa-youtube"></i></a></div></div>
+  <div class="footer-col"><h4>دسترسی سریع</h4><ul><li><a href="#home">خانه</a></li><li><a href="#sky">آسمان امروز</a></li><li><a href="#planets">سیارات</a></li><li><a href="#events">رویدادها</a></li></ul></div>
+  <div class="footer-col"><h4>یادگیری</h4><ul><li><a href="#knowledge">مقالات نجومی</a></li><li><a href="#planets">منظومه شمسی</a></li><li><a href="#events">رویدادهای آسمانی</a></li><li><a href="#education">آموزش نجوم</a></li><li><a href="#about">درباره کیهان‌نما</a></li></ul></div>
+  <div class="footer-col newsletter"><h4>خبرنامه کیهانی</h4><p style="margin-bottom:12px">برای دریافت خبرهای نجومی، ایمیل خود را وارد کنید.</p><form id="newsletterForm"><input type="email" id="emailInput" placeholder="ایمیل شما" aria-label="ایمیل شما" required><button class="btn btn-primary" type="submit">عضویت در خبرنامه <i class="fa-solid fa-paper-plane"></i></button></form></div>
+  <div class="copyright">© <span id="year"></span> کیهان‌نما — ساخته‌شده برای علاقه‌مندان به نجوم</div>
+</footer>
+<div class="notice" id="notice" role="status" aria-live="polite"></div>
+<div id="detailModal" class="detail-modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle" style="display:none"><div class="modal-card"><button type="button" id="modalClose" class="modal-close" aria-label="بستن پنجره"><i class="fa-solid fa-xmark"></i></button><h2 id="modalTitle"></h2><p id="modalBody"></p><button type="button" class="btn btn-primary" id="modalOk">متوجه شدم</button></div></div>
+<script>
+const planetFacts={
+'عطارد':'عطارد نزدیک‌ترین سیاره به خورشید و کوچک‌ترین سیاره منظومه شمسی است.',
+'زهره':'زهره داغ‌ترین سیاره منظومه شمسی است؛ جوّ ضخیم آن گرما را نگه می‌دارد.',
+'زمین':'زمین تنها سیاره‌ای است که تاکنون وجود حیات در آن به‌طور قطعی شناخته شده است.',
+'مریخ':'وجود شواهدی از آب در گذشته مریخ، آن را به یکی از مقصدهای مهم پژوهش تبدیل کرده است.',
+'مشتری':'مشتری بزرگ‌ترین سیاره منظومه شمسی است و طوفان بزرگ سرخ آن سال‌هاست مشاهده می‌شود.',
+'زحل':'زحل به سامانه حلقه‌های گسترده‌اش معروف است؛ حلقه‌هایش عمدتاً از ذرات یخ و سنگ ساخته شده‌اند.',
+'اورانوس':'اورانوس غولی یخی است که محور چرخشش نسبت به بیشتر سیارات بسیار کج شده است.',
+'نپتون':'نپتون دورترین سیاره شناخته‌شده منظومه شمسی از خورشید است.'};
+function showNotice(message){const n=document.getElementById('notice');n.textContent=message;n.style.display='block';clearTimeout(window.noticeTimer);window.noticeTimer=setTimeout(()=>n.style.display='none',3500)}
+function updateClock(){const now=new Date();document.getElementById('currentTime').innerHTML='<i class="fa-regular fa-clock"></i> '+now.toLocaleTimeString('fa-IR',{hour:'2-digit',minute:'2-digit'});document.getElementById('todayDate').textContent=now.toLocaleDateString('fa-IR');document.getElementById('mapDate').textContent=now.toLocaleDateString('fa-IR');document.getElementById('mapTime').textContent=now.toLocaleTimeString('fa-IR',{hour:'2-digit',minute:'2-digit'})}
+updateClock();setInterval(updateClock,30000);document.getElementById('year').textContent=new Date().getFullYear().toLocaleString('fa-IR');
+// Planet cards show useful information on click.
+document.querySelectorAll('.planet-item').forEach(button=>button.addEventListener('click',()=>{document.getElementById('planetDetail').textContent=planetFacts[button.dataset.planet]||'';document.querySelectorAll('.planet-item').forEach(b=>b.style.borderColor='');button.style.borderColor='var(--primary)'}));
+// Reusable details dialog for articles and astronomy events.
+const modal=document.getElementById('detailModal');function openModal(title,body){document.getElementById('modalTitle').textContent=title;document.getElementById('modalBody').textContent=body;modal.style.display='flex';document.getElementById('modalClose').focus()}function closeModal(){modal.style.display='none'}
+document.getElementById('modalClose').addEventListener('click',closeModal);document.getElementById('modalOk').addEventListener('click',closeModal);modal.addEventListener('click',e=>{if(e.target===modal)closeModal()});document.addEventListener('keydown',e=>{if(e.key==='Escape')closeModal()});
+document.querySelectorAll('.article-card').forEach(card=>{card.setAttribute('tabindex','0');card.setAttribute('role','button');const open=()=>openModal(card.querySelector('h4').textContent,card.querySelector('p').textContent+' این توضیح، خلاصه‌ای آموزشی است و برای مطالعه بیشتر می‌توان از منابع معتبر نجوم استفاده کرد.');card.addEventListener('click',open);card.addEventListener('keydown',e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();open()}})});
+document.querySelectorAll('.event-card').forEach(card=>{card.setAttribute('tabindex','0');card.setAttribute('role','button');const open=()=>openModal(card.querySelector('h4').textContent,card.querySelector('p').textContent+' زمان دقیق این رویداد به تاریخ و موقعیت رصد بستگی دارد؛ برای زمان‌بندی دقیق از تقویم نجومی به‌روز استفاده کنید.');card.addEventListener('click',open);card.addEventListener('keydown',e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();open()}})});
+// Theme toggle updates CSS variables and remembers the choice on this device.
+const themeButton=document.getElementById('themeButton');function applyTheme(theme){const light=theme==='light';document.body.classList.toggle('light-mode',light);const vars=light?{'--bg-dark':'#edf4fa','--bg-card':'#ffffff','--bg-hover':'#e2edf5','--text':'#102033','--muted':'#526579','--border':'#d5e0ea'}:{'--bg-dark':'#050a15','--bg-card':'#0b1324','--bg-hover':'#131f36','--text':'#f1f5f9','--muted':'#94a3b8','--border':'#1e293b'};Object.entries(vars).forEach(([k,v])=>document.documentElement.style.setProperty(k,v));themeButton.innerHTML=light?'<i class="fa-solid fa-sun"></i>':'<i class="fa-solid fa-moon"></i>';themeButton.setAttribute('aria-label',light?'فعال‌کردن تم تاریک':'فعال‌کردن تم روشن');try{localStorage.setItem('keyhan-theme',theme)}catch(e){}}
+try{applyTheme(localStorage.getItem('keyhan-theme')||'dark')}catch(e){applyTheme('dark')}themeButton.addEventListener('click',()=>applyTheme(document.body.classList.contains('light-mode')?'dark':'light'));
+// Search filters all major content areas without jumping the page while typing.
+const searchInput=document.getElementById('siteSearch');let noResults=document.createElement('div');noResults.className='no-results';noResults.textContent='نتیجه‌ای پیدا نشد.';noResults.style.display='none';document.querySelector('.articles-grid').appendChild(noResults);
+searchInput.addEventListener('input',()=>{
+ const q=searchInput.value.trim().toLocaleLowerCase('fa');let matches=0;
+ const searchable=[...document.querySelectorAll('.article-card'),...document.querySelectorAll('.planet-item'),...document.querySelectorAll('.event-card'),...document.querySelectorAll('.feature-card')];
+ searchable.forEach(card=>{const haystack=(card.textContent+' '+(card.dataset.title||'')+' '+(card.dataset.feature||'')).toLocaleLowerCase('fa');const match=!q||haystack.includes(q);card.style.display=match?'':'none';if(match&&q)matches++});
+ noResults.style.display=(q&&matches===0)?'block':'none';
+ if(q&&matches>0){const first=searchable.find(card=>card.style.display!=='none');if(first)first.scrollIntoView({behavior:'smooth',block:'center'})}
+});
+// Feature tiles act like navigation buttons on both mouse and keyboard.
+function activateFeature(tile){const target=document.getElementById(tile.dataset.target);if(target)target.scrollIntoView({behavior:'smooth',block:'start'});else showNotice('این بخش در دسترس نیست.')}
+document.querySelectorAll('.feature-card').forEach(tile=>{tile.addEventListener('click',()=>activateFeature(tile));tile.addEventListener('keydown',e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();activateFeature(tile)}})});
+// Learning lessons open their own detailed lesson dialog.
+document.querySelectorAll('.lesson-card').forEach(card=>{const open=()=>openModal(card.dataset.title,card.dataset.body);card.addEventListener('click',open);card.addEventListener('keydown',e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();open()}})});
+// Newsletter is clearly identified as a demo until a real mailing service is connected.
+document.getElementById('newsletterForm').addEventListener('submit',event=>{event.preventDefault();const email=document.getElementById('emailInput').value.trim();if(!email)return;showNotice('فرم بررسی شد؛ ثبت واقعی ایمیل نیازمند اتصال سرویس خبرنامه است.');event.target.reset()});
+// Smoothly navigate and update active nav item.
+document.querySelectorAll('nav a').forEach(link=>link.addEventListener('click',()=>{document.querySelectorAll('nav a').forEach(a=>a.classList.remove('active'));link.classList.add('active')}));
+</script>
+</body></html>
